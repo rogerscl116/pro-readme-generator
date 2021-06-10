@@ -9,8 +9,8 @@ const questions = [
         type: 'input',
         name: 'githubUsername',
         message: 'What is your GitHub username? (Required)',
-        validate: githubUsername => {
-            if (githubUsername) {
+        validate: githubUsernameInput => {
+            if (githubUsernameInput) {
                 return true;
             } else {
                 return console.log("Please enter your GitHub username!")
@@ -21,8 +21,8 @@ const questions = [
         type: 'input',
         name: 'githubRepo',
         message: 'What is the name of your GitHub repo? (Required)',
-        validate: githubRepo => {
-            if (githubRepo) {
+        validate: githubRepoInput => {
+            if (githubRepoInput) {
                 return true;
             } else {
                 return console.log("Please enter your GitHub repo!")
@@ -45,8 +45,8 @@ const questions = [
         type: 'input',
         name: 'projectDescription',
         message: 'Provide a description of your project. (Required)',
-        validate: projectDescription => {
-            if (projectDescription) {
+        validate: projectDescriptionInput => {
+            if (projectDescriptionInput) {
                 return true;
             } else {
                 return console.log("Please enter a project description!")
