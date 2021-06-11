@@ -56,18 +56,43 @@ const questions = [
     {
         type: 'input',
         name: 'projectSteps',
-        message: 'If applicable, provide the steps required to install your project.',   
+        message: 'If applicable, provide the steps required to install your project.'   
     },
+    {
+        type: 'input',
+        name: 'projectInstructions',
+        message: 'Provide instructions and examples of your project in use.'   
+    },
+    {
+        type: 'list',
+        name: 'projectLicense',
+        message: 'Choose a license for your project.',   
+        choices: ['Apache License 2.0', 'GNU GPLv3', 'MIT', 'ISC']
+    },
+
+
 
     
 
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, err =>  {
+        if (err) {
+            return console.log(err);
+        }
+        console.log('Success! Your README.md file has been generated.');
+    })
+}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+   // .prompt(questions)
+   // .then(response => {
+    //    console.log(response);
+   // });
+}
 
 // Function call to initialize app
 init();
