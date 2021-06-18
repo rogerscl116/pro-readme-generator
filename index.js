@@ -1,82 +1,88 @@
-// TODO: Include packages needed for this application
+// include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const util = require("util");
+const generateMarkdown = require('./utils/generateMarkdown');
 
-// TODO: Create an array of questions for user input
+// create an array of questions for user input
 const questions = [
     {
         type: 'input',
-        name: 'githubUsername',
+        name: 'username',
         message: 'What is your GitHub username? (Required)',
-        validate: githubUsernameInput => {
-            if (githubUsernameInput) {
+        validate: usernameInput => {
+            if (usernameInput) {
                 return true;
             } else {
-                return console.log("Please enter your GitHub username!")
+                return("Please enter your GitHub username!")
             }
         }
     },
     {
         type: 'input',
-        name: 'githubRepo',
-        message: 'What is the name of your GitHub repo? (Required)',
-        validate: githubRepoInput => {
-            if (githubRepoInput) {
+        name: 'email',
+        message: 'What is your email address? (Required)',
+        validate: emailInput => {
+            if (emailInput) {
                 return true;
             } else {
-                return console.log("Please enter your GitHub repo!")
+                return("Please enter your email address!")
             }
         }
     },
     {
         type: 'input',
-        name: 'projectTitle',
+        name: 'title',
         message: 'What is the title of your project? (Required)',
         validate: projectTitleInput => {
             if (projectTitleInput) {
                 return true;
             } else {
-                return console.log("Please enter a project title!")
+                return("Please enter a project title!")
             }
         }
     },
     {
         type: 'input',
-        name: 'projectDescription',
+        name: 'description',
         message: 'Provide a description of your project. (Required)',
         validate: projectDescriptionInput => {
             if (projectDescriptionInput) {
                 return true;
             } else {
-                return console.log("Please enter a project description!")
+                return("Please enter a project description!")
             }
         }
     },
     {
         type: 'input',
-        name: 'projectSteps',
+        name: 'installation',
         message: 'If applicable, provide the steps required to install your project.'   
     },
     {
         type: 'input',
-        name: 'projectInstructions',
+        name: 'usage',
         message: 'Provide instructions and examples of your project in use.'   
     },
     {
+        type: 'input',
+        name: 'credits',
+        message: 'List your collaborators, if any, with links to their GitHub profiles.'   
+    },
+    {
         type: 'list',
-        name: 'projectLicense',
+        name: 'license',
         message: 'Choose a license for your project.',   
         choices: ['Apache License 2.0', 'GNU GPLv3', 'MIT', 'ISC']
     },
-
-
-
-    
+    {
+        type: 'input',
+        name: 'tests',
+        message: 'If applicable, provide the written tests for your application and examples on how to run them.'   
+    }
 
 ];
 
-// TODO: Create a function to write README file
+// create a function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, err =>  {
         if (err) {
@@ -86,13 +92,15 @@ function writeToFile(fileName, data) {
     })
 }
 
-// TODO: Create a function to initialize app
+// create a function to initialize app
 function init() {
-   // .prompt(questions)
-   // .then(response => {
-    //    console.log(response);
-   // });
-}
+    inquirer
+     .prompt(questions)
+     .then(function (userInput) {
+         console.log(userInput)
+         writeToFile("README.md", generateMarkdown(userInput));
+     })
+    }
 
-// Function call to initialize app
+// function call to initialize app
 init();
