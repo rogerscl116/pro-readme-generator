@@ -13,7 +13,7 @@ const questions = [
             if (usernameInput) {
                 return true;
             } else {
-                return("Please enter your GitHub username!")
+                console.log("Please enter your GitHub username!")
             }
         }
     },
@@ -25,7 +25,7 @@ const questions = [
             if (emailInput) {
                 return true;
             } else {
-                return("Please enter your email address!")
+                console.log("Please enter your email address!")
             }
         }
     },
@@ -37,7 +37,7 @@ const questions = [
             if (projectTitleInput) {
                 return true;
             } else {
-                return("Please enter a project title!")
+                console.log("Please enter a project title!")
             }
         }
     },
@@ -49,7 +49,7 @@ const questions = [
             if (projectDescriptionInput) {
                 return true;
             } else {
-                return("Please enter a project description!")
+                console.log("Please enter a project description!")
             }
         }
     },
@@ -72,7 +72,7 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'Choose a license for your project.',   
-        choices: ['Apache License 2.0', 'GNU GPLv3', 'MIT', 'ISC']
+        choices: ['MIT', 'GPLv2', 'Apache', 'GPLv3', 'ISC']
     },
     {
         type: 'input',
