@@ -3,18 +3,27 @@
 function renderLicenseBadge(licenseInput) {
   if (!licenseInput) {
     return '';
+  } else if (licenseInput = 'MIT') {
+  return `<a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow alt="MIT license badge"/></a>`
+  } else if (licenseInput = 'GPLv2') {
+    return `<a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html"><img src="https://img.shields.io/badge/License-GPLv2-blue alt="GPLv2 license badge"/></a>`
+  } else if (licenseInput = 'Apache') {
+    return `<a href="https://opensource.org/licenses/Apache-2.0"><img src="https://img.shields.io/badge/License-Apache%202.0-yellowgreen alt="Apache license badge"/></a>`
+  } else if (liscenseInput = 'GPLv3') {
+    return `<a href="https://www.gnu.org/licenses/gpl-3.0"><img src="https://img.shields.io/badge/License-GPLv3-blue alt="GPLv3 license badge"/></a>`
+  } else if (licenseInput = 'ISC') {
+    return `<a href="https://opensource.org/licenses/ISC"><img src="https://img.shields.io/badge/License-ISC-blue alt="ISC license badge"/></a>`
   }
-  return `<img src="https://img.shields.io/badge/License-${licenseInput}-orange" alt="license badge"/>`
 }
 
 // create a function that returns the license link
 // if there is no license, return an empty string
-function renderLicenseLink(licenseLink) {
-  if(!licenseLink) {
-    return ''
-  }
-  return `<img src="https://opensource.org/licenses/${licenseLink}">`
-}
+// function renderLicenseLink(licenseLink) {
+//   if(!licenseLink) {
+//     return ''
+//   }
+//   return `<a href="https://opensource.org/licenses/${licenseLink}">`
+// }
 
 // create a function that returns the license section of README
 // if there is no license, return an empty string
@@ -34,7 +43,7 @@ function generateMarkdown(data) {
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
-  * [Credits](#credits)
+  * [Contributing](#credits)
   * [License](#license)
   * [Tests](#tests)
         
@@ -44,12 +53,11 @@ function generateMarkdown(data) {
   ## Usage
   ${data.usage}
 
-  ## Credits
+  ## Contributing
   ${data.credits}
 
   ## License
   ${renderLicenseBadge(data.license)}
-  ${renderLicenseLink(data.license)}
 
   ## Tests
   ${data.tests}

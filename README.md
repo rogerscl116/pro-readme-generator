@@ -1,27 +1,26 @@
 # Professional README Generator
 
   ## Description
-  A command-line application that dynamically generates a professional README.md file from a user's input using Inquirer.
+  A command-line application that dynamically creates a README.md file using Inquirer.
 
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
-  * [Credits](#credits)
+  * [Contributing](#credits)
   * [License](#license)
   * [Tests](#tests)
         
   ## Installation
-  Open terminal and enter `npm install inquirer`.
+  Open the terminal and enter `npm install inquirer`.
 
   ## Usage
-  Enter `node index.js` in the terminal. Answer all the questions on the screen. If successful, your README file will be generated.
+  Enter `node index.js` in the terminal. Answer questions on the screen. When finished, your README file will be generated.
 
-  ## Credits
+  ## Contributing
   None.
 
   ## License
-  <img src="https://img.shields.io/badge/License-MIT-orange" alt="license badge"/>
-  <img src="https://opensource.org/licenses/MIT">
+  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow alt="MIT license badge"/></a>
 
   ## Tests
   None.
