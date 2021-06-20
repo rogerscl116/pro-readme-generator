@@ -20,8 +20,7 @@
   None, feel free to fork this repo!
 
   ## License
-  <img src="https://img.shields.io/badge/License-MIT-yellow" alt="MIT license badge"/>
-  <a href="https://opensource.org/licenses/MIT"></a>
+  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow" alt="MIT license badge"/></a>
 
   ## Tests
   
