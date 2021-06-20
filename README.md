@@ -9,21 +9,21 @@
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
-  * [Contributing](#credits)
+  * [Contributing](#contributing)
   * [Tests](#tests)
   * [Questions](#questions)
         
   ## Installation
-  Open terminal and enter `npm init` to create a package.json file. Enter `npm install inquirer` to install inquirer.
+  Open the terminal and enter `npm init` to create a package.json file. Enter `npm install inquirer` to install the Inquirer package.
 
   ## Usage
-  Enter `node index.js` in the terminal. Answer questions on the screen. When finished, your README file will be generated.
+  Enter `node index.js` in the terminal. Answer all required questions on the screen. If successful, your README file will be generated.
 
   ## Contributing
   None, feel free to fork this repo!
 
   ## Tests
-  
+  None.
 
   ## Questions
   If you have any questions, please contact me!
