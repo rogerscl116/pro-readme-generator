@@ -13,7 +13,7 @@ function renderLicenseLink(licenseLink) {
   if(!licenseLink) {
     return ''
   }
-  return '';
+  return `<img src="https://opensource.org/licenses/${licenseLink}">`
 }
 
 // create a function that returns the license section of README
@@ -40,17 +40,21 @@ function generateMarkdown(data) {
         
   ## Installation
   ${data.installation}
+
   ## Usage
   ${data.usage}
+
   ## Credits
   ${data.credits}
+
   ## License
   ${renderLicenseBadge(data.license)}
+  ${renderLicenseLink(data.license)}
+
   ## Tests
   ${data.tests}
 
   ## Questions
-
   If you have any questions, please contact me!
 
   - GitHub: https://github.com/${data.username}
