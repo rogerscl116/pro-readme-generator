@@ -6,6 +6,10 @@
   ## Description
   A command-line application that dynamically creates a README.md file using Inquirer.
 
+  ## Walkthrough Video
+
+  ![Readme Generator Walkthrough Video](./videos/readme-walkthrough-video.mp4)
+
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
