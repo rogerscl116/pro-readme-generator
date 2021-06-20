@@ -5,6 +5,10 @@
 
   ## Description
   A command-line application that dynamically creates a README.md file using Inquirer.
+  
+  ## Walkthrough Video
+  
+  <iframe src="https://drive.google.com/file/d/1U88AlHHaW_85Pu0prYtCNAN2WM5C-QDz/preview" width="640" height="480"></iframe>
 
   ## Table of Contents
   * [Installation](#installation)
