@@ -11,13 +11,13 @@
   * [Tests](#tests)
         
   ## Installation
-  Enter `npm install inquire` in the terminal to install inquire.
+  Open terminal and enter `npm install inquirer`.
   ## Usage
-  Enter `node index.js` in the terminal. Answer the questions on the screen. When all questions are answered, your README.md file will be generated.
+  Enter `node index.js` in the terminal. Answer all the questions on the screen. If successful, your README file will be generated.
   ## Credits
   None. Feel free to fork this repo!
   ## License
-  MIT
+  <img src="https://img.shields.io/badge/License-MIT-orange" alt="license badge"/>
   ## Tests
   None.
 

@@ -1,31 +1,28 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-function renderLicenseBadge(license) {
-  let licenseType = license;
-  let yourLicense = '';
-  if (licenseType === 'MIT') {
-    yourLicence = `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`
-  } else if (licenseType === 'GPLv2') {
-    yourLicense = `![License: GPLv2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)`
-  } else if (licenseType === 'Apache') {
-    yourLicense = `![License: Apache](https://img.shields.io/badge/License-Apache%202.0-blue.svg)`
-  } else if (licenseType === 'GPLv3') {
-    yourLicense = `![License: GPLv3](https://img.shields.io/badge/License-GPLv3-blue.svg)`
-  } else if (licenseType === 'ISC') {
-    yourLicense = `![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)`
+// create a function that returns a license badge based on which license is passed in
+// if there is no license, return an empty string
+function renderLicenseBadge(licenseInput) {
+  if (!licenseInput) {
+    return '';
   }
-  if (!license) {
+  return `<img src="https://img.shields.io/badge/License-${licenseInput}-orange" alt="license badge"/>`
+}
+
+// create a function that returns the license link
+// if there is no license, return an empty string
+function renderLicenseLink(licenseLink) {
+  if(!licenseLink) {
+    return ''
+  }
+  return '';
+}
+
+// create a function that returns the license section of README
+// if there is no license, return an empty string
+function renderLicenseSection(license) {
+  if(!license) {
     return '';
   }
 }
-
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
 
 // create a function to generate markdown for README
 function generateMarkdown(data) {
@@ -48,7 +45,7 @@ function generateMarkdown(data) {
   ## Credits
   ${data.credits}
   ## License
-  ${data.license}
+  ${renderLicenseBadge(data.license)}
   ## Tests
   ${data.tests}
 
