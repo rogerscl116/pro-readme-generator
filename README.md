@@ -17,13 +17,14 @@
   Enter `node index.js` in the terminal. Answer questions on the screen. When finished, your README file will be generated.
 
   ## Contributing
-  None.
+  None, feel free to fork this repo!
 
   ## License
-  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow alt="MIT license badge"/></a>
+  <img src="https://img.shields.io/badge/License-MIT-yellow alt="MIT license badge"/>
+  <a href="https://opensource.org/licenses/MIT"></a>
 
   ## Tests
-  None.
+  
 
   ## Questions
   If you have any questions, please contact me!
