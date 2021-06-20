@@ -4,15 +4,15 @@ function renderLicenseBadge(licenseInput) {
   if (!licenseInput) {
     return '';
   } else if (licenseInput = 'MIT') {
-  return `<img src="https://img.shields.io/badge/License-MIT-yellow alt="MIT license badge"/>`
+  return `<img src="https://img.shields.io/badge/License-MIT-yellow" alt="MIT license badge"/>`
   } else if (licenseInput = 'GPLv2') {
-    return `<img src="https://img.shields.io/badge/License-GPLv2-blue alt="GPLv2 license badge"/>`
+    return `<img src="https://img.shields.io/badge/License-GPLv2-blue" alt="GPLv2 license badge"/>`
   } else if (licenseInput = 'Apache') {
-    return `<img src="https://img.shields.io/badge/License-Apache%202.0-yellowgreen alt="Apache license badge"/>`
+    return `<img src="https://img.shields.io/badge/License-Apache%202.0-yellowgreen" alt="Apache license badge"/>`
   } else if (liscenseInput = 'GPLv3') {
-    return `<img src="https://img.shields.io/badge/License-GPLv3-blue alt="GPLv3 license badge"/>`
+    return `<img src="https://img.shields.io/badge/License-GPLv3-blue" alt="GPLv3 license badge"/>`
   } else if (licenseInput = 'ISC') {
-    return `<img src="https://img.shields.io/badge/License-ISC-blue alt="ISC license badge"/>`
+    return `<img src="https://img.shields.io/badge/License-ISC-blue" alt="ISC license badge"/>`
   }
 }
 
