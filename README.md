@@ -1,7 +1,7 @@
 # Professional README Generator
 
   ## License
-  <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html"><img src="https://img.shields.io/badge/License-GPLv2-blue" alt="GPLv2 license badge"/></a>
+  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow" alt="MIT license badge"/></a>
 
   ## Description
   A command-line application that dynamically creates a README.md file using Inquirer.
